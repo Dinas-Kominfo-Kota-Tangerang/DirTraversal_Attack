@@ -26,4 +26,4 @@ ambil_data = reqq.get(url, heads1)
 
 html_file = BeautifulSoup(ambil_data.text, "html.parser")
 
-print(ambil_data.status_code, html_file.prettify(), file=open("output.html", "a"))
+print(ambil_data.status_code, html_file.prettify(), file=open("output.html", "f"))
